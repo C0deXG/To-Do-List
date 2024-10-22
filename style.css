@@ -1,0 +1,88 @@
+body{
+    background: #1c2841;
+    color: white;
+    transition: all ease-in-out 1s;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 3fr;
+}
+
+h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+}
+
+
+
+.forum-input-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.input{
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+    outline: none;
+    padding: 10px;
+    border: dashed .9px;
+
+    width: 25em;
+}
+
+input::placeholder{
+    color: white;
+   
+}
+input:focus{
+    outline: none;
+}
+
+button{
+    color: black;
+    border: none;
+    background: none;
+    background-color: rgb(0, 255, 234);
+    padding: 6px;
+    width: 5em;
+    color: black;
+    border-radius: 6px;
+    transition: all ease-in-out 100ms;
+}
+
+button:focus, button:hover{
+    background-color: rgba(0, 255, 234, 0.745);
+    color: white;
+    transition: background-color 300ms;
+}
+
+button:hover{
+    background-color: rgba(0, 255, 234, 0.745);
+    color: white;
+    transition: color background-color 300ms;
+}
+
+.list{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+span{
+    cursor: pointer;
+    color: red;
+}
+.list li{
+    margin-bottom: 1em;
+    padding: 8px;
+}
